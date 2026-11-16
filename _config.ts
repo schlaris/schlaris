@@ -8,7 +8,7 @@ const site = lume({
 });
 site.use(lumeCms({ cms }));
 site.use(basePath());
-site.add("CNAME");
+
 site.add("styles.css");
 
 export default site;
