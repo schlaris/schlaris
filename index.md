@@ -16,7 +16,7 @@ title: Home
   <li>mechanical keyboards</li>
   <li>brewing coffee first thing in the morning</li>
   <li>editing, doing stupid shit because I can</li>
-  <li>procrastinating on academics to make small projects like this</li>
+  <li>procrastinating on academics to make small projects</li>
 </ul>
 
 <p>check out some of my projects:</p>
