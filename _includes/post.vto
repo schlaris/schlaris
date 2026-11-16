@@ -1,8 +1,13 @@
 ---
 layout: layout.vto
 ---
-<h1>test</h1>
+---
+layout: layout.vto
+---
 
-<p><time datetime="2026-11-16">2026-11-16</time></p>
+<h1>{{ title }}</h1>
 
-<p class="back"><a href="/blog/">&larr; back</a></p>
+<p><time datetime="{{ date.toISOString().slice(0, 10) }}">{{ date.toISOString().slice(0, 10) }}</time></p>
+
+{{ content }}
+
