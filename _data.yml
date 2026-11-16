@@ -1,0 +1,11 @@
+site:
+  name: schlaris
+  description: A small personal site.
+
+nav:
+  - title: Home
+    url: /
+  - title: Ambitions
+    url: /ambitions/
+  - title: Blog
+    url: /blog/
