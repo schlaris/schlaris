@@ -11,5 +11,5 @@ site.use(lumeCms({ cms }));
 site.use(basePath());
 site.use(extractDate());
 site.add("styles.css");
-
+site.copy("fonts");
 export default site;
