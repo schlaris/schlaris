@@ -11,11 +11,10 @@ title: Home
 </p>
 <p>i like:</p>
 <ul>
-  <li>cybersecurity, hardware</li>
-  <li>fiddling with old tech I can get my hands on</li>
+  <li>cybersecurity, hardware, programming</li>
+  <li>fiddling with old tech</li>
   <li>mechanical keyboards</li>
-  <li>brewing coffee first thing in the morning</li>
-  <li>editing, doing stupid shit because I can</li>
+  <li>coffee, redbull, monster,...the works</li>
   <li>procrastinating on academics to make small projects</li>
 </ul>
 
@@ -29,7 +28,7 @@ title: Home
 
 <p>reach out to me at:</p>
 <ul class="contact">
-  <li><a href="mailto:schlaris@proton.me">schlaris@proton.me</a></li>
+  <li><a href="mailto:schlaris@proton.me">proton.mail</a></li>
   <li><a href="https://discord.com/users/476997798382796832">discord</a></li> 
 </ul>
 
