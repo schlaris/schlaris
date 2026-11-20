@@ -19,7 +19,7 @@ to technology and decided to teach me the ropes, and thats when i fell in love a
 <br>
 anyways, SAT December predictions are out, seems pretty interesting but im going for March SAT so i dont know if i should do them<br>
 people tell me March SAT is a bit too late but i dont really have a choice considering im not well-equipped for December SAT<br>
-i should be much more prepared for March if im able to grasp geometry and trig better understand verbal<br>
+i should be much more prepared for March if im able to grasp geometry and trig<br>
 <br>
 i just needed to really try to git good at maths<br>
 and i hope i can keep that pace going in the future.<br>
