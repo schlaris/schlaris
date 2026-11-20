@@ -21,6 +21,10 @@
   --accent: #4169E1; /* blue: headings and highlights */
   --link: #2a85f0;   /* blue: links */
   --rule: #6b6b6b;
+
+  --glow-accent: 65, 105, 225;
+  --glow-link: 42, 133, 240;
+  --glow-text: 255, 255, 255;
 }
  
 * {
@@ -156,4 +160,63 @@ ul.posts {
   margin: 0 0 1rem;
   padding: 0;
 }
- 
+
+h1,
+h2,
+.accent {
+  text-shadow:
+    0 0 2px currentColor,
+    0 0 8px rgba(var(--glow-accent), .7),
+    0 0 20px rgba(var(--glow-accent), .4),
+    0 0 40px rgba(var(--glow-accent), .2),
+    -1px 0 rgba(255, 0, 80, .35),
+    1px 0 rgba(0, 220, 255, .35);
+}
+
+a {
+  text-shadow: 0 0 6px rgba(var(--glow-link), .45);
+}
+a:hover {
+  text-shadow:
+    0 0 4px currentColor,
+    0 0 12px rgba(var(--glow-link), .7);
+}
+
+body {
+  text-shadow: 0 0 3px rgba(var(--glow-text), .25);
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 8px rgba(var(--glow-accent), .6);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 2px,
+      rgba(0, 0, 0, .16) 3px
+    ),
+    radial-gradient(ellipse at center, transparent 65%, rgba(0, 0, 0, .5) 100%);
+}
+
+@keyframes crt-flicker {
+  0%, 100% { opacity: 1; }
+  45%      { opacity: .96; }
+  50%      { opacity: .86; }
+  55%      { opacity: .98; }
+}
+h1 {
+  animation: crt-flicker 5s infinite steps(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  h1 { animation: none; }
+} 
