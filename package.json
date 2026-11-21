@@ -18,6 +18,7 @@
     "@lumeland/plugin-base-path": "^1.0.0",
     "@lumeland/plugin-cms": "^1.0.1",
     "@lumeland/plugin-extract-date": "^1.0.0",
-    "@lumeland/ssx": "^0.1.16"
+    "@lumeland/ssx": "^0.1.16",
+    "lume": "^0.3.0-alpha.46"
   }
 }
