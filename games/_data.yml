@@ -1,0 +1,27 @@
+games:
+   - name: OFF
+     desc: mmmm purification my favorite. the game that started it all,
+           i ADORE this game so much, the remaster is just as good as the freeware  
+     img: /games/off.png
+     url: https://store.steampowered.com/app/3339880/OFF/
+   
+   - name: OneShot
+     desc: funny cat that likes pancakes, play as messiah trying to save a dying world by restoring dayling THROUGH A LIGHTBULB!!!!
+     img: /games/oneshot.png
+     url: https://store.steampowered.com/app/420530/OneShot/
+    
+   - name: The Binding of Isaac (Rebirth)
+     desc: wahhhh wahhhhh wahhhhhh ok enough fucking around best rougelike ever 100/10 will play till i die 
+     img: /games/thebindingofisaacrebirth.png
+     url: https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/
+   
+   - name: Dying Light
+     desc: got into this game because my ex loved it and bought it for himself and for me
+           when it went on sale, ended up becoming one of my most beloved zombie games 	
+     img: /games/dyinglight.png
+     url: https://store.steampowered.com/app/239140/Dying_Light/
+     
+   - name: Risk of Rain 2
+     desc: did you know i love rougelikes? THIS IS ALSO VERY GOOD PLAY NOW
+     img: /games/riskofrain2.png
+     url: https://store.steampowered.com/app/632360/Risk_of_Rain_2/

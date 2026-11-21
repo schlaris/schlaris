@@ -12,4 +12,5 @@ site.use(basePath());
 site.use(extractDate());
 site.add("styles.css");
 site.copy("fonts");
+site.copy([".png"]);
 export default site;

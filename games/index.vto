@@ -1,0 +1,23 @@
+---
+layout: layout.vto
+title: Games
+---
+<h1>favorite games</h1>
+<p> a collection of my favorite games<br>
+some i grew up with, some i discovered pretty recently<br>
+should give you an insight on the kind of person i am.
+</p>
+
+<div class="games">
+  {{ for game of games }}
+  <div class="game">
+    <a class="banner" href="{{ game.url }}" target="_blank" rel="noopener">
+      <img src="{{ game.img }}" alt="{{ game.name }}">
+    </a>
+    <div class="game-info">
+      <strong>{{ game.name }}</strong>
+      <p>{{ game.desc }}</p>
+    </div>
+  </div>
+  {{ /for }}
+</div>

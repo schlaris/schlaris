@@ -1,0 +1,60 @@
+---
+layout: layout.vto
+title: Music
+---
+
+<h1>my lifeline</h1>
+<p>my favorite albums / songs in those albums (previews)<br>
+spotify embed is really ugly so bare with me
+</p>
+
+<div class="tiles">
+  {{ for song of music }}
+  <div class="tile">
+    {{ if song.spotify }}
+    <div class="stage">
+      <iframe
+        class="player"
+        title="{{ song.name }} preview"
+        data-src="https://open.spotify.com/embed/track/{{ song.spotify }}?theme=0"
+        height="152"
+        allow="encrypted-media"></iframe>
+      <button class="cover" type="button" aria-label="Play preview of {{ song.name }}">
+        <img src="{{ song.img }}" alt="{{ song.name }} by {{ song.artist }}">
+      </button>
+    </div>
+    <button class="close" type="button" hidden>✕ close</button>
+    {{ else }}
+    <div class="stage">
+      <a class="cover" href="{{ song.url }}" target="_blank" rel="noopener">
+        <img src="{{ song.img }}" alt="{{ song.name }} by {{ song.artist }}">
+      </a>
+    </div>
+    {{ /if }}
+    <a class="tile-title" href="{{ song.url }}" target="_blank" rel="noopener">{{ song.name }}</a>
+    <span class="tile-sub">♪ {{ song.artist }}</span>
+  </div>
+  {{ /for }}
+</div>
+
+<script>
+  document.querySelectorAll(".tile").forEach(tile => {
+    const stage = tile.querySelector(".stage");
+    const player = tile.querySelector(".player");
+    const cover = tile.querySelector("button.cover");
+    const close = tile.querySelector(".close");
+    if (!player || !cover) return;
+
+    cover.addEventListener("click", () => {
+      player.src = player.dataset.src;
+      stage.classList.add("open");
+      close.hidden = false;
+    });
+
+    close.addEventListener("click", () => {
+      stage.classList.remove("open");
+      player.removeAttribute("src");
+      close.hidden = true;
+    });
+  });
+</script>
